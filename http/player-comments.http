@@ -1,0 +1,2 @@
+### local player comments 전체 조회
+GET http://localhost:8080/api/comments
