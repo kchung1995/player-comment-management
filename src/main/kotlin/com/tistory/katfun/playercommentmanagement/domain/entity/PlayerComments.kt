@@ -8,7 +8,7 @@ class PlayerComments(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "player_comments_id")
-    val id: Long,
+    val playerCommentsId: Long,
 
     @Column
     val name: String,
