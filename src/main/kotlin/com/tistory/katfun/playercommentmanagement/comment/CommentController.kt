@@ -13,7 +13,7 @@ class CommentController(
 ) {
     @GetMapping("/comments")
     fun playerComments(
-        @RequestParam("playerId", required = false) playerId: List<Long>?,
+        @RequestParam("playerId", required = false) playerId: List<Long>?
     ): List<PlayerCommentsResponse> {
         return commentService.comments(playerId)
             .map { PlayerCommentsResponse.from(it) }

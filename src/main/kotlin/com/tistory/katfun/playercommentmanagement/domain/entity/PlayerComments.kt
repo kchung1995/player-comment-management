@@ -1,6 +1,11 @@
 package com.tistory.katfun.playercommentmanagement.domain.entity
 
-import javax.persistence.*
+import javax.persistence.Column
+import javax.persistence.Entity
+import javax.persistence.GeneratedValue
+import javax.persistence.GenerationType
+import javax.persistence.Id
+import javax.persistence.Table
 
 @Entity
 @Table(name = "player_comments")
@@ -26,5 +31,5 @@ class PlayerComments(
     val winCount: Int,
 
     @Column(columnDefinition = "text")
-    val comments: String,
+    val comments: String
 )

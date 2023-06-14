@@ -9,5 +9,4 @@ class PlayerCommentManagementApplicationTests {
     @Test
     fun contextLoads() {
     }
-
 }
