@@ -7,6 +7,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.tistory.katfun.playercommentmanagement.domain.entity.PlayerComments
 import java.time.LocalDateTime
 
+@JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy::class)
 data class PlayerCommentsResponse(
     val playerCommentsId: Long,
     val name: String,
@@ -70,5 +71,4 @@ data class Comment(
             )
         }
     }
-
 }
